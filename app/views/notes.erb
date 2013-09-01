@@ -1,0 +1,13 @@
+<h1> Your notes </h1>
+
+<div = container >
+
+<p><% Note.find_each do |notes| %>
+  <%= p notes.title %> <%= p notes.description %> <%= "<a href='/edit/#{notes.id}'> edit</a>" %> <%= "<a href='/delete/#{notes.id}'> delete</a>" %>
+  <br>
+  <% end %>
+</p>
+
+=
+
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Are you sure you want to delete <%=@note.title%>?</h1>
+  
+<form method="post" action="/delete" >
+
+  <input type = "hidden" name = "id" value = "<%= @note.id %>" >
+
+  <input type = "submit" value = "Yes">
+</form>
+
+
+<form method="get" action="/notes" >
+
+
+  <input type = "submit" value = "No">
+</form>
+
+  </table>
+</div>
+
+
